@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/InfoTemp.css';
-
+ 
 export default function InfoTemp({temp, tempMax, tempMin, img, description}) {
     return (
         <div className = 'info-box'>
