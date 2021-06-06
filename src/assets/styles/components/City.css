@@ -1,0 +1,13 @@
+.info-ubication{
+    width: 240px;
+    height: 6vh;
+    background-color: rgba(5, 3, 138, 0.25);
+    margin: 0 auto;
+    display: flex;
+                                                /* Centrar vertical y horizontalmente */
+    align-items: center;                             
+    justify-content: center;
+    border-bottom: 10px ridge #5F868E;
+    border-radius: 40px;
+
+}

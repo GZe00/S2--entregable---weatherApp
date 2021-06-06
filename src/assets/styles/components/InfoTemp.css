@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap');
+
+.info-box{
+    width: 100%;
+    height: 200px;
+    margin: 10px auto 0 auto;
+}
+
+.info-temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Suez One', serif;
+    font-size: 26px;
+}
+
+hr{
+    border: 0;
+    width: 30%;
+    margin: 10px auto 0 auto;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.info-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.descrip{
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Brygada 1918', serif;
+}
+
+.info-temp-max-min{
+    text-align: center;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+div .max{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+div .min{
+    display: inline-block;
+    color: rgb(31, 31, 31);
+    font-size: 14px;
+}
