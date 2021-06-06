@@ -72,6 +72,10 @@ const App = () => {
     setChange(oTest);    
   }
 
+  const onHandleReset = () => {
+    setOTest('');
+  }
+
   useEffect(() =>{
     if(change){
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${oTest}&units=metric&lang=es&appid=82b8455236da184718038c0f0baa478a`)
@@ -91,10 +95,7 @@ const App = () => {
       setHumi(data.main.humidity);
       setPressure(data.main.pressure);
     }
-  },[change])
-  
-  
-
+  },[change]);
   
 
   return (
@@ -102,7 +103,7 @@ const App = () => {
     <div className="App">
 
       <Tittles />
-      <Search onChange = {onHandleChange} value = {oTest} onClickS = {onHandleClick} />
+      <Search onChange = {onHandleChange} value = {oTest} onClickS = {onHandleClick} onClickR = {onHandleReset} />
       <City city={city} abr={abr} />
       <InfoTemp temp={temp} tempMax={tempMax} tempMin={tempMin} img={img} description={description} />
       <InfoGen wind={wind} seaLevel={seaLevel} humi={humi} pressure={pressure} />

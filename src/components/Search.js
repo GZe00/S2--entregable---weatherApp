@@ -8,7 +8,7 @@ const Search = ({onChange, value, onClickS, onClickR}) => {
         <div className = 'search-box'>
             <input type = 'text' onChange = {onChange} value = {value} className = 'search-input' placeholder = '  Buscar ciudad... '/>
             <button onClick = {onClickS} className = 'search-box-ico-search'>🔍️</button>
-            <button onClick = {onClickR} className = 'search-box-ico-clean'>❌</button>
+            <button onClick = {onClickR}  className = 'search-box-ico-clean'>❌</button>
         </div>
     )
 }
